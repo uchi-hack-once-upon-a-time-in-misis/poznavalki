@@ -8,7 +8,7 @@ def main():
     #pprint.pprint(res) Для красивого отображения запроса
     print()
     for i in range(len(res['items'])):
-        links.append(res['items'][i]['formattedUrl'])
+        links.append(res['items'][i]['htmlTitle'], res['items'][i]['formattedUrl'])
     print(links)
 
 if __name__ == '__main__':
