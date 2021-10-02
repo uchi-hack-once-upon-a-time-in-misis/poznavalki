@@ -1,7 +1,8 @@
 import googleapiclient.discovery as gc
 import pprint
-question = input()
+
 def main():
+    question = input()
     service = gc.build("customsearch", "v1", developerKey= "AIzaSyC3EeNpQWJKlNrsLWY2BeERN7lsCK55VyE")
     res = service.cse().list(q = question,cx = '8fa0dc9f3a0a72baa').execute()
     links = []
